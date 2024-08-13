@@ -1,0 +1,2 @@
+#!/usr/bin/env bash
+/home/reitph/Development/rettier/drawio-desktop/node_modules/.bin/electron /home/reitph/Development/rettier/drawio-desktop/ --enable-plugins "$@"

@@ -1,0 +1,11 @@
+[Desktop Entry]
+Icon=/home/reitph/Development/rettier/drawio-desktop/build/icon.svg
+Exec=/home/reitph/.local/bin/drawio
+Version=1.0
+Type=Application
+Categories=Development
+Name=Drawio
+Terminal=false
+StartupWMClass=draw.io
+MimeType=application/vnd.jgraph.mxfile;application/vnd.visio;
+

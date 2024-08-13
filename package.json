@@ -9,7 +9,7 @@
     "node": ">=20"
   },
   "scripts": {
-    "start": "electron .",
+    "start": "electron . --enable-plugins",
     "sync": "node ./sync.cjs",
     "release-win": "electron-builder --config electron-builder-win.json --publish always",
     "release-win32": "electron-builder --config electron-builder-win32.json --publish always",

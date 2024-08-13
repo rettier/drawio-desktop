@@ -2492,9 +2492,9 @@ function clipboardAction(method, data)
 	}
 	else if (method == 'writeImage')
 	{
-		clipboard.write({image: 
-			nativeImage.createFromDataURL(data.dataUrl), html: '<img src="' +
-			data.dataUrl + '" width="' + data.w + '" height="' + data.h + '">'});
+                fs.writeFileSync("/tmp/clipboard.png", data.dataUrl.split(',')[1], 'base64');
+                const child = spawn('xclip', ['-selection', 'clipboard', '-t', 'image/png', '-i', '/tmp/clipboard.png']);
+                child.on('error', function(err) { console.log('xclip error: ' + err) });
 	}
 }
 
